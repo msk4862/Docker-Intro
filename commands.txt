@@ -1,0 +1,26 @@
+> Images are predefined containers on docker hub
+
+1)To show running containers: docker ps
+
+2) docker pull <container_name>
+   docker run -it alpine:3.10 (image_name/container_name)
+   To give custom name: docker run -it --name my-alpine --rm alpine:3.10 (to remove cache after deletion)
+   To enter's machine/linux bash: docker run -it alpine:3.10 bash
+   To run container/image in background: docker run -it --detach <image/container-name>
+   					 docker run -dit <containers>
+
+To search for a docker container in docker hub: docker search <container> (e.g. docker search python)
+
+3) To run a specific file of container: docker run -it alpine:3.10 <file_name>
+					
+4) To delete docker images: docker image prune
+   To delete docker container: docker rm <containerID>
+   To remove all containers: docker container images
+6) To attach backround running container: docker attach <container_port>
+
+docker kill <conatiner>
+docker logs <container>
+docker pause <containerID>
+docker unpause <containerID>
+To view container history: docker history <containerID>
+To view machine info: docker info	
