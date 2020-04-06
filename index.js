@@ -1,9 +1,20 @@
-const http = require("http");
+// more-or-less the example code from the hapi-pino repo
+const express = require("express");
+const http = require('http')
 
-http
-  .createServer(function(request, response) {
-    console.log("request received");
-    response.end("omg hi", "utf-8");
-  })
-  .listen(3000);
-console.log("server started");
+const hostname = '0.0.0.0'
+const port = process.env.PORT || 3000
+const app = express()
+
+app.use((req, res, next) => {
+        res.statusCode=200
+        res.setHeader('Content-Type', 'text/html')
+        res.end(
+            '<html><body>Hello there sunshine!!!</body></html>'
+            )
+    })
+
+const server = http.createServer(app)
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}`)
+})

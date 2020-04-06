@@ -12,7 +12,8 @@
    To search for a docker container in docker hub: docker search <container> (e.g. docker search python)
 
 3) To run a specific file of container: docker run -it alpine:3.10 <file_name>
-					
+   To view permission of a folder(tags): ls -lsah
+				
 4) To delete docker images: docker image prune
    To delete docker container: docker rm <containerID>
    To remove all containers: docker container images
