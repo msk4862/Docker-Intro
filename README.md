@@ -1,5 +1,5 @@
 # Docker-Introduction
-This is a simple nodeJs project to learn working of Docker.
+This is a simple nodeJs project to learn working of Docker containers.
 
 > The three things that make containers a reality are: chroot, namespaces and cgroups.
 
