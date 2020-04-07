@@ -1,7 +1,7 @@
 # Docker-Introduction
 This is a simple nodeJs project to learn working of Docker containers.
 
-> The three things that make containers a reality are: chroot, namespaces and cgroups.
+> ### To learn more about docker conatiners you can have a look at this [course](https://btholt.github.io/complete-intro-to-containers/).
 
 ## Some docker basic commands
 * To show running containers
@@ -14,9 +14,10 @@ This is a simple nodeJs project to learn working of Docker containers.
 > `docker run -it <conatiner> <filename>`
 * To build conatiner
 > `docker build -t <container_name> <path/to/project>`
-
 * To build conatiner
 > `docker build -t <container_name> <path/to/project>`
+* To view info about your container
+> `docker inspect <conatiner name>`
 * To expose port while running
 > docker run --publish <port:port>
 * To delete docker container

@@ -1,3 +1,4 @@
+# machine image
 FROM node:12-stretch
 
 USER node
