@@ -14,6 +14,7 @@ app.use((req, res, next) => {
             )
     })
 
+    //use default machine ip (http://192.168.99.100/) to access while using docker toolbox 
 const server = http.createServer(app)
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}`)
