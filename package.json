@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/msk4862/Docker-Intro#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   }
 }
